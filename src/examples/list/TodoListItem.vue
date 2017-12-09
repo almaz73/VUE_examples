@@ -1,10 +1,19 @@
 <template>
   <div>
-    TodoList
+    {{todo.text}}
+    <button @click="$emit('remove', todo.id)">
+      x
+    </button>
   </div>
 </template>
 <script>
   export default {
-    name: 'TodoList'
+    name: 'TodoListItem',
+    props:{
+      todo:{
+        type:Object,
+        required: true
+      }
+    }
   }
 </script>
