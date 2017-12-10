@@ -12,14 +12,14 @@
   import HideMenu from './components/HideMenu'
 
   import TodoList from './examples/list/TodoList'
-  import WithComponent from './examples/with_component/WithComponent'
+  import DinamicComponent from './examples/dinamicComponent/DinamicComponent'
   import VueRouterDiscription from './examples/router/VueRouterDiscription'
 
 
   var router = new VueRouter ({
     routes: [
       {path: '/todoList', component: TodoList},
-      {path: '/withComponent', component: WithComponent},
+      {path: '/dinamicComponent', component: DinamicComponent},
       {path: '/router', component: VueRouterDiscription}
     ]
   })
@@ -29,7 +29,7 @@
     components: {
       HideMenu,
       TodoList,
-      WithComponent
+      DinamicComponent
     },
     router: router
   }
