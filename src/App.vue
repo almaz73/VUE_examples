@@ -13,12 +13,14 @@
 
   import TodoList from './examples/list/TodoList'
   import WithComponent from './examples/with_component/WithComponent'
+  import VueRouterDiscription from './examples/router/VueRouterDiscription'
 
 
   var router = new VueRouter ({
     routes: [
       {path: '/todoList', component: TodoList},
       {path: '/withComponent', component: WithComponent},
+      {path: '/router', component: VueRouterDiscription}
     ]
   })
 

@@ -1,4 +1,5 @@
 # vue_examples
+[DEMO](http://fmap.ru/games/game/vueExamples)
 
 > A Vue.js project
 

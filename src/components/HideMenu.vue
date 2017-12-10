@@ -3,6 +3,7 @@
     &#65049; Примеры VUE : Menu &#65049;
     <div v-if="isPanelVisible">
       <ul v-for="menu in menus">
+        {{router}}
         <router-link :to="menu.link">{{menu.text}}</router-link>
       </ul>
     </div>
@@ -20,7 +21,8 @@
         tx: 'todoList',
         menus: [
           {link: 'todoList', text: " TodoList - добавление/удаление списка"},
-          {link: 'withComponent', text: "..unconstruction"}
+          {link: 'withComponent', text: "..unconstruction"},
+          {link: 'router', text: "VueRouterDiscription - как подключить роутер"}
         ]
       }
     }
